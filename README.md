@@ -237,7 +237,7 @@ void userTurn(Game* game)
 		case 'c': a = 2;
 			break;
 		default:
-			std::cout << "wrong a\n";
+			std::cout << "неверный х\n";
 			break;
 		}
 
@@ -250,7 +250,7 @@ void userTurn(Game* game)
 		case 3: b--;
 			break;
 		default:
-			std::cout << "wrong b\n";
+			std::cout << "неверный у\n";
 			break;
 		}
 
@@ -258,7 +258,7 @@ void userTurn(Game* game)
 		if (game->board[b][a] == ' ')
 			wrong = 0;
 		else
-			std::cout << "wrong place!\n";
+			std::cout << "!!!!\n";
 
 
 	} while (wrong);
